@@ -1,0 +1,73 @@
+{
+    "dependencies": [
+      {
+        "name": "lime",
+        "type": "haxelib",
+        "version": "8.1.1"
+      },
+      {
+        "name": "openfl",
+        "type": "haxelib",
+        "version": "9.2.2"
+      },
+      {
+        "name": "flixel",
+        "type": "haxelib",
+        "version": "5.2.2"
+      },
+      {
+        "name": "flixel-addons",
+        "type": "haxelib",
+        "version": "2.10.0"
+      },
+      {
+        "name": "flixel-ui",
+        "type": "haxelib",
+        "version": "2.5.0"
+      },
+      {
+        "name": "flixel-tools",
+        "type": "haxelib",
+        "version": "1.5.1"
+      },
+      {
+        "name": "flxanimate",
+        "type": "haxelib",
+        "version": "3.0.4"
+      },
+      {
+        "name": "hxcpp",
+        "type": "haxelib"
+      },
+      {
+        "name": "hxcpp-debug-server",
+        "type": "haxelib"
+      },
+      {
+        "name": "hscript",
+        "type": "haxelib"
+      },
+      {
+        "name": "hxvlc",
+        "type": "haxelib"
+      },
+      {
+        "name": "away3d",
+        "type": "haxelib"
+      },
+      {
+        "name": "linc_luajit",
+        "type": "git",
+        "dir": null,
+        "ref": "master",
+        "url": "https://github.com/nebulazorua/linc_luajit"
+      },
+      {
+        "name": "linc_discord-rpc",
+        "type": "git",
+        "dir": null,
+        "ref": "master",
+        "url": "https://github.com/Aidan63/linc_discord-rpc"
+      }
+    ]
+  }
