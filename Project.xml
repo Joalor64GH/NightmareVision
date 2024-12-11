@@ -41,7 +41,7 @@
 	<set name="BUILD_DIR" value="export/release" unless="debug" />
 	<set name="BUILD_DIR" value="export/32bit" if="32bits" />
 
-	<classpath name="source" />
+	<source path="source" />
 	
 	<!-- PSYCH ENGINE CUSTOMIZATION -->
 	<define name="MODS_ALLOWED" if="desktop" />
@@ -62,34 +62,23 @@
 	<assets path="assets/embeds" rename= "assets" embed="false" unless="EMBED_FILES"/> -->
 
 	
-	<define name="hscriptPos" if="debug" />
+	<define name="hscriptPos" />
 
 	<assets path="assets/preload" rename="assets"/>
 
 	<library name="videos"        preload="true" />
-	<library name="songs"         preload="true" />
 	<library name="shared"        preload="true" />
 	
 	<assets path="assets/videos"        library="videos" if="VIDEOS_ALLOWED"/>
-	<assets path="assets/songs"         library="songs" unless="HIT_SINGLE"/>
 	<assets path="assets/shared"        library="shared"/>
 
 	<assets path='content' embed='false' if="MODS_ALLOWED"/>
-
-
-	<!-- <template path='mods' /> -->
-	
-	<!-- assets path="CHANGELOG.md" rename='changelog.txt' -->
 
 	<!-- NOTE FOR FUTURE SELF SINCE FONTS ARE ALWAYS FUCKY 
 		TO FIX ONE OF THEM, I CONVERTED IT TO OTF. DUNNO IF YOU NEED TO
 		THEN UHHH I USED THE NAME OF THE FONT WITH SETFORMAT() ON THE TEXT!!!
 		NOT USING A DIRECT THING TO THE ASSET!!!
 	-->
-
-
-
-	<assets path="assets/fonts" embed='true'/>
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />
@@ -99,6 +88,7 @@
 	<haxelib name="flxanimate"/>
 
 	<haxelib name="hscript" />
+	<haxelib name="hxcpp-debug-server" if="desktop debug" />
 
 	<haxelib name="linc_luajit" if="LUA_ALLOWED"/>
 	<haxelib name="linc_discord-rpc" if="DISCORD_ALLOWED"/>
